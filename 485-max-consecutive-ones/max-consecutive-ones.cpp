@@ -5,10 +5,12 @@ public:
         for(int i=0;i<nums.size();i++)
         {
             if(nums[i]==1)
-            count++;
+            {
+                count++;
+                max1=max(max1,count);
+            }
             else
             count=0;
-            max1=max(max1,count);
         }
         return max1;
     }
