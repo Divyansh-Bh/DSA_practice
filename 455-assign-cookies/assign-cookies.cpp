@@ -4,16 +4,14 @@ public:
         sort(g.begin(),g.end());
         sort(s.begin(),s.end());
         int i=0,j=0;
-        int satisfied=0;
         while(i<g.size()&&j<s.size())
         {
             if(s[j]>=g[i])
             {
-                satisfied++;
                 i++;
             }
             j++;
         }
-        return satisfied;
+        return i;
     }
 };
